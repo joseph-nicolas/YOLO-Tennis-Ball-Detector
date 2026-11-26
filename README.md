@@ -37,7 +37,9 @@ After these steps the 1000 images became 2154, and the split above was applied t
 
 ## Annotation
 
-Annotation means drawing a box around every ball so the model has a target to learn from. Each image needs its own text file with the four coordinates of every box. I let a pretrained model draw the boxes first to save time, then went through every one by hand to fix anything that was wrong or too tight. A box that is off by a little can mislead the model, so the manual cleanup was the most important step after collecting the images.
+Annotation means drawing a box around every ball so the model has a target to learn from. Each image needs its own text file with the four coordinates of every box. I let a pretrained model draw the boxes first to save time, then went through every one by hand to fix anything that was wrong or too tight. A box that is off by a little can mislead the model, so the manual cleanup was the most important step after collecting the images. An example of annotation can be seen below.
+
+![Example annotation](assets/annotation-example.png)
 
 ## Training
 
