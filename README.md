@@ -14,7 +14,7 @@ I used the YOLO11n architecture from Ultralytics, the smallest variant in the fa
 | Input size | 1280 x 1280 |
 | Epochs | 100 |
 | Classes | 1 (tennis_ball) |
-| Training time | about 3 hours 30 minutes on an RTX 4060 |
+| Training time | ~ 3 hours 30 minutes (Laptop RTX 4060)|
 
 ## The dataset
 
