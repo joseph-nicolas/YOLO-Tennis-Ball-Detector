@@ -1,4 +1,4 @@
-# Custom-Tennis-Ball-Detector
+# YOLO Tennis Ball Detector
 
 TenniRoll is a robot that walks a tennis court and gathers loose balls. The robot looks around with a phone camera, a mobile app decides where the robot should go, and the YOLO model is the part that actually finds the balls in the camera feed. This repository holds that computer vision part: the model, the data, and how I trained it.
 
