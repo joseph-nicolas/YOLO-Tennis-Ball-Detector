@@ -66,8 +66,3 @@ The image above on the left is the raw camera shot of the half court, and the on
 ![Precision, recall, mAP50, mAP50-95 over training](assets/metrics.png)
 
 The charts track the four metrics across the 100 epochs, and the picture matches the numbers: precision and recall stay high and climb slowly, while the stricter mAP50-95 builds up more gradually.
-
-## Project structure
-
-The folders mirror how the data is organized for training. The dataset folder already exists on the machine that trained the model; you copy your own images and labels into those same spots.
-
