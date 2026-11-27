@@ -22,7 +22,8 @@ The dataset is a single class with one label: tennis_ball. I collected the raw i
 
 The images were split into three groups in the usual 80/10/10 shape, which is shown in the figure below:
 
-![Dataset split: 1734 train, 210 validation, 210 test](assets/dataset-split.png)
+![Dataset split: 800 train, 100 validation, 100 test](assets/dataset-preaugmentation-example.png)
+
 
 The validation and test sets never touch the training set, so the reported numbers are an honest estimate of how the model does on pictures it has not seen.
 
@@ -33,13 +34,14 @@ Before any training can happen the model must know what a tennis ball looks like
 - Brightness: two extra copies were made from each image, one 15 percent brighter and one 15 percent darker. This teaches the model to find a ball in harsh sun and in shade.
 - Flip: one horizontally flipped copy was made from each image, so the model learns a ball looks the same from the left and the right.
 
-After these steps the 1000 images became 2154, and the split above was applied to that larger set.
+After these steps the 1000 images became 2154, and the split above was applied to that larger set. This can be seen below
+![Dataset split: 1734 train, 210 validation, 210 test](assets/dataset-split.png)
 
 ## Annotation
 
-Annotation means drawing a box around every ball so the model has a target to learn from. Each image needs its own text file with the four coordinates of every box. I let a pretrained model draw the boxes first to save time, then went through every one by hand to fix anything that was wrong or too tight. A box that is off by a little can mislead the model, so the manual cleanup was the most important step after collecting the images. An example of annotation can be seen below.
+Annotation means drawing a box around every ball so the model has a target to learn from. Each image needs its own text file with the four coordinates of every box. I let a pretrained model draw the boxes first to save time, then went through every one by hand to fix anything that was wrong or too tight. A box that is off by a little can mislead the model, so the manual cleanup was the most important step after collecting the images. An example of annotation can be seen below:
 
-![Example annotation](assets/annotation-example.png)
+<img src="assets/annotation-example.png" width="420" alt="Example annotation">
 
 ## Training
 
