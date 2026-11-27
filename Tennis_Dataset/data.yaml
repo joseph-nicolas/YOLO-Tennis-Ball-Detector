@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['tennis-ball']
+
+roboflow:
+  workspace: yolo-azp17
+  project: final_tennis_annotation-awn2g
+  version: 14
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/yolo-azp17/final_tennis_annotation-awn2g/dataset/14
