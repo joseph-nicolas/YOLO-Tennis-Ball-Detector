@@ -65,4 +65,4 @@ The image above on the left is the raw camera shot of the half court, and the on
 
 ![Precision, recall, mAP50, mAP50-95 over training](assets/metrics.png)
 
-The charts track the four metrics across the 100 epochs, and the picture matches the numbers: precision and recall stay high and climb slowly, while the stricter mAP50-95 builds up more gradually.
+The charts track the four metrics (and more) across the 100 epochs, and the picture matches the numbers: precision and recall stay high and climb slowly, while the stricter mAP50-95 builds up more gradually.
